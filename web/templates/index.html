@@ -1,0 +1,29 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>AI-based Web Application Firewall</title>
+    <style type="text/css">
+    .div2 {
+        text-align: center;
+        /*(让div中的内容居中)*/
+    }
+    </style>
+</head>
+
+<body>
+    <h1 class="div2">AI-based Web Application Firewall</h1>
+    <h2 class="div2">please input payload</h2>
+    <div class="div2">
+        <form method="post">
+            <span >payload:</span><input type="text" name="payload" id="payload">
+            <button type="submit" id="loginBtn">submit</button>
+        </form>
+    </div>
+    {% if error %}
+    <h1 class="div2">{{ error }}!</h1>
+    {% endif %}
+</body>
+
+</html>
